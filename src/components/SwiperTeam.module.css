@@ -1,0 +1,28 @@
+.swiperTeam{
+    max-width: 1420px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.swiperTeamSwiper{
+    width: 100%;
+}
+
+@media (max-width: 1500px) {
+    .swiperTeam {
+        padding: 40px 30px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .swiperTeam {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .swiperTeam {
+        padding: 20px 15px;
+    }
+}

@@ -1,0 +1,231 @@
+.howDoes{
+    margin: 100px 0 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.howDoesInner{
+    max-width: 1250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.howDoesInner h2{
+    align-self: flex-start;
+    font-size: 3rem;
+     margin-bottom: 100px;
+}
+
+.howDoesItems{
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.howDoesItem{
+         border-radius: 5px;
+    background-image: url('../assets/bggrain.jpg');
+     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.howDoesItemInner{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    gap: 20px;
+    width: 400px;
+    height: 230px;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.howDoesItemInner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     background-image: url('../assets/howdoesitembg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+        border-radius: 5px;
+
+}
+
+
+.howDoesItemInner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.32);
+    border-radius: 5px;
+}
+
+.howDoesItemInnerIMGWrapper{
+    align-self: flex-start;
+    align-items: center;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.howDoesItemInnerAnimation{
+    align-self: flex-start;
+    height: 10px;
+    width: 10%;
+    border-radius: 20px;
+    background-color: #00a266;
+    animation: stickAnimation 2s ease-in-out;
+    animation-fill-mode: forwards;
+   
+}
+
+@keyframes stickAnimation {
+    0%{
+        width: 10%;
+    }
+
+
+    60%{
+        width: 70%;
+    }
+
+    80%{
+        width: 60%;
+    }
+
+    100%{
+        width: 70%;
+    }
+
+}
+
+.howDoesItemInner img{
+    width: 100px;
+    height: 100px;   
+    margin: -20px 0 0 -20px;
+}
+
+.howDoesItemInner p{
+    z-index: 10;
+    color: white;
+    font-size: 1.6rem;
+    width: 100%;
+    text-align: left;
+        margin: 0;
+
+}
+
+@media (max-width: 1000px) {
+    .howDoes{
+        margin: 80px 0;
+        padding: 0 20px;
+    }
+
+    .howDoesInner{
+        max-width: 100%;
+    }
+
+    .howDoesInner h2{
+        font-size: 2.5rem;
+        margin-bottom: 60px;
+    }
+
+    .howDoesItems{
+        gap: 30px;
+    }
+
+    .howDoesItemInner{
+        width: 350px;
+        height: 220px;
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .howDoesItemInner p{
+        font-size: 1.4rem;
+    }
+
+    .howDoesItemInner img{
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .howDoesInner h2{
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .howDoesItems{
+        gap: 20px;
+    }
+
+    .howDoesItemInner{
+        width: 300px;
+        height: 200px;
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .howDoesItemInner p{
+        font-size: 1.2rem;
+    }
+
+    .howDoesItemInner img{
+        width: 70px;
+        height: 70px;
+        margin: -15px 0 0 -15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .howDoesInner h2{
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .howDoesItemInner{
+        width: 280px;
+        height: 180px;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .howDoesItemInner p{
+        font-size: 1rem;
+    }
+
+    .howDoesItemInner img{
+        width: 60px;
+        height: 60px;
+    }
+}

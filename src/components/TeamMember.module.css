@@ -1,0 +1,102 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.teamMember{
+    border-radius: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    width: 320px;
+    min-width: 320px;
+    max-width: 320px;
+}
+.teamMember:hover{
+    scale: 1.01;
+   box-shadow: 0 0 29px black;
+}
+
+.teamMemberWrapper:hover{
+    scale: 1.001;
+
+    .teamMemberWrapperContent{
+        scale: 1.01;
+    }
+
+    
+}
+
+
+
+
+.teamMemberBorder{
+    background-color: #2f2f2f;
+    padding: 10px;
+    border-radius:50px;
+   -webkit-box-shadow: 0 0 10px #585858;
+        box-shadow: 0 0 15px #585858;
+    ;
+}
+
+.teamMemberWrapper{
+    border-radius: 40px;
+    width: 100%;
+    height: 515px;
+    background-color: #cad4d0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-end;
+    color: white;
+   -webkit-box-shadow: 0 0 10px #6e6d6d;
+        box-shadow: 0 0 5px #6e6d6d;
+    ;
+    position: relative;
+    overflow: hidden;
+}
+
+.bgImg{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: -100px;
+}
+
+.teamMemberWrapperContent{
+    height: 250px;
+    backdrop-filter: blur(35px);
+        mask-image: linear-gradient(
+      to top,
+      white 60%,
+      transparent
+    );
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    text-align: left;
+    padding: 50px 20px 20px;
+    border-radius: 38px;
+    margin: 0;
+}
+
+.personNameWrapper h2{
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.linkWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+
+

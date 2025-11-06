@@ -1,0 +1,133 @@
+/* CustomVideoPlayer.module.css - Light Mode & Controls Visibility */
+
+/* Container for the whole player */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #f0f0f0; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Wrapper to position controls over the video */
+.wrapper {
+    position: relative;
+    width: 100%;
+    cursor: pointer; 
+}
+
+/* The native video element */
+.videoElement {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #000;
+}
+
+/* Controls overlay */
+.controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* Light, slightly translucent background */
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 10px;
+    box-sizing: border-box;
+    /* Dark text for visibility on light background */
+    color: #1a1a1a; 
+    
+    /* CSS Transition for smooth fade in/out */
+    transition: opacity 0.3s ease-in-out; 
+}
+
+/* Controls row layout */
+.controlsRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Individual Control Buttons */
+.controlButton {
+    background: none;
+    border: none;
+    color: #1a1a1a; /* Dark color for icons/text */
+    cursor: pointer;
+    font-size: 1.5em;
+    padding: 0 10px;
+    transition: color 0.1s;
+}
+
+.controlButton:hover {
+    color: #000;
+}
+
+.timeDisplay {
+    font-size: 0.9em;
+    margin: 0 15px;
+}
+
+.progressBarContainer {
+    padding: 0 0 10px 0;
+}
+
+/* Progress Bar Styling (using light theme colors) */
+.progressSlider {
+    width: 100%;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 6px;
+    background: #cccccc; 
+    border-radius: 3px;
+}
+
+.progressSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #007bff; /* Accent color for thumb */
+    cursor: pointer;
+}
+
+/* Volume Control Styling */
+.volumeControl {
+    display: flex;
+    align-items: center;
+}
+
+.volumeSlider {
+    width: 80px;
+    cursor: pointer;
+    margin-left: 5px;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 4px;
+    background: #cccccc; 
+    border-radius: 2px;
+}
+
+.volumeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #1a1a1a; /* Dark thumb color */
+    cursor: pointer;
+}
+
+/* Fullscreen mode styling */
+.container:fullscreen {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    background: #000;
+}
+.container:fullscreen .videoElement {
+    height: 100vh;
+}

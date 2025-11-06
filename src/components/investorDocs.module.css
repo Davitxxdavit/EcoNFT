@@ -1,0 +1,242 @@
+.investorDocs {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  position: relative;
+}
+
+.investorDocsInner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.investorDocs h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-size: 2.5rem;
+}
+
+.investorDocs p {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #6c757d;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.investorDocsItems {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.investorDocsItem {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.investorDocsItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.investorDocsItem h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.investorDocsItem p {
+  color: #6c757d;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.downloadBtn {
+  background: linear-gradient(135deg, #28a745, #20c997);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.downloadBtn:hover {
+  background: linear-gradient(135deg, #218838, #1ea085);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+}
+
+.downloadBtn:active {
+  transform: translateY(0);
+}
+.investorDocsHeader{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+  position: fixed;
+  top: 15px;
+  left: 0;
+  margin-left: 100px;
+  z-index: 9999;
+}
+.investorDocsHeader a{
+  text-decoration: none;
+  color: #117103;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: "Shippori Mincho", serif;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+  .investorDocs {
+    padding: 100px 20px 40px;
+  }
+
+  .investorDocsInner {
+    max-width: 90%;
+  }
+
+  .investorDocs h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .investorDocs p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .investorDocsItems {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+  }
+
+  .investorDocsItem {
+    padding: 25px;
+  }
+
+  .investorDocsItem h3 {
+    font-size: 1.3rem;
+  }
+
+  .investorDocsItem p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+  }
+
+  .downloadBtn {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+
+  .investorDocsHeader{
+    margin-left: 50px;
+  }
+
+  .investorDocsHeader a{
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .investorDocs {
+    padding: 120px 15px 30px;
+  }
+
+  .investorDocs h2 {
+    font-size: 1.8rem;
+  }
+
+  .investorDocs p {
+    font-size: 0.95rem;
+  }
+
+  .investorDocsItems {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .investorDocsItem {
+    padding: 20px;
+  }
+
+  .investorDocsItem h3 {
+    font-size: 1.2rem;
+  }
+
+  .investorDocsItem p {
+    font-size: 0.9rem;
+  }
+
+  .downloadBtn {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
+
+  .investorDocsHeader{
+    margin-left: 30px;
+    top: 20px;
+  }
+
+  .investorDocsHeader a{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .investorDocs {
+    padding: 100px 10px 20px;
+  }
+
+  .investorDocs h2 {
+    font-size: 1.5rem;
+  }
+
+  .investorDocs p {
+    font-size: 0.9rem;
+    max-width: 100%;
+  }
+
+  .investorDocsItem {
+    padding: 15px;
+  }
+
+  .investorDocsItem h3 {
+    font-size: 1.1rem;
+  }
+
+  .investorDocsItem p {
+    font-size: 0.85rem;
+  }
+
+  .downloadBtn {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+
+  .investorDocsHeader{
+    margin-left: 20px;
+    top: 15px;
+  }
+
+  .investorDocsHeader a{
+    font-size: 0.9rem;
+  }
+}

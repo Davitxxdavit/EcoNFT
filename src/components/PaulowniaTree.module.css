@@ -1,0 +1,344 @@
+.paulowniaTree{
+position: relative;
+    width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+
+}
+
+.paulowniaTreeHeading{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+  
+}
+
+.paulowniaTreeHeadingInner{
+    width: 60%;
+}
+
+.paulowniaTreeHeadingInner h1{
+    font-size: 5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.paulowniaTreeHeadingInner p{
+    font-size: 1.2rem;
+    font-family: "Shippori Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 20px 0;
+}
+
+.paulowniaTreeInner{
+  
+ max-width: 1250px;
+}
+
+.paulowniaTreeIMG{
+    border-radius: 9% 91% 7% 93% / 94% 10% 90% 6%     ;
+    background-image: url('../assets/EricAndZura.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 380px;
+    box-shadow: 10px 10px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+
+.PaulowniaTreeAdvantages{
+ 
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantagesHeading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.advantagesHeadingInner{
+    width: 60%;
+}
+
+.advantagesHeadingInner h2{
+    color: #117103;
+    font-size: 2.2rem;
+    margin: 20px;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.advantagesHeadingInner p{
+    margin: 20px;
+    padding: 0;
+    font-family: "Shippori Mincho", serif;
+}
+
+.advantagesSection1{
+    align-self: center;
+    margin-top: 20px;
+    background-color: #f3f3f1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.advantagesSection2{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.advantagesSection2Item{
+    width: 20%;
+    background-color: #f3f3f1;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.advantagesSection2Item h4{
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: "Shippori Mincho", serif;
+    margin-bottom: 20px;
+    color: #117103;
+}
+
+.advantagesSection2Item p{
+    font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.whyChoose{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.whyChooseItems{
+    width: 1250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.whyChooseItem{
+    width: 30%;
+    background-color: #f3f3f1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.whyChooseItem h3{
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: "Shippori Mincho", serif;
+    margin-bottom: 20px;
+    color: #117103;
+    text-shadow: none;
+}
+
+.whyChooseItem p{
+    font-family: "Shippori Mincho", serif;
+}
+
+.whyChoose h2{
+    font-size: 2.2rem;
+    font-family: "Shippori Mincho", serif;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #117103;
+    text-shadow: none;
+}
+
+.paulowniaTreeHeader{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+    top: 15px;
+    left: 0;
+    margin-left: 100px;
+}
+
+.paulowniaTreeHeader a{
+    text-decoration: none;
+    color: #117103;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: "Shippori Mincho", serif;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+    .paulowniaTreeHeading{
+        flex-direction: column;
+        height: auto;
+        padding: 100px 20px 40px;
+    }
+
+    .paulowniaTreeHeadingInner{
+        width: 90%;
+    }
+
+    .paulowniaTreeHeadingInner h1{
+        font-size: 3rem;
+    }
+
+    .paulowniaTreeHeadingInner p{
+        font-size: 1rem;
+    }
+
+    .paulowniaTreeIMG{
+        width: 300px;
+        height: 300px;
+        margin-top: 30px;
+    }
+
+    .advantagesHeading{
+        flex-direction: column;
+    }
+
+    .advantagesHeadingInner{
+        width: 90%;
+    }
+
+    .advantagesHeadingInner h2{
+        font-size: 2rem;
+    }
+
+    .advantagesSection2Item{
+        width: 40%;
+    }
+
+    .whyChooseItems{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .whyChooseItem{
+        width: 80%;
+    }
+
+    .paulowniaTreeHeader{
+        margin-left: 50px;
+    }
+
+    .paulowniaTreeHeader a{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .paulowniaTreeHeadingInner h1{
+        font-size: 2.5rem;
+    }
+
+    .paulowniaTreeHeadingInner p{
+        font-size: 0.95rem;
+    }
+
+    .paulowniaTreeIMG{
+        width: 250px;
+        height: 250px;
+    }
+
+    .advantagesHeadingInner h2{
+        font-size: 1.8rem;
+    }
+
+    .advantagesSection2Item{
+        width: 100%;
+        padding: 30px;
+    }
+
+    .whyChooseItem{
+        width: 90%;
+    }
+
+    .whyChoose h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .paulowniaTreeHeader{
+        margin-left: 30px;
+    }
+
+    .paulowniaTreeHeader a{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .paulowniaTreeHeadingInner h1{
+        font-size: 2rem;
+    }
+
+    .paulowniaTreeHeadingInner p{
+        font-size: 0.9rem;
+    }
+
+    .paulowniaTreeIMG{
+        width: 200px;
+        height: 200px;
+    }
+
+    .advantagesHeadingInner h2{
+        font-size: 1.5rem;
+    }
+
+    .advantagesHeadingInner p{
+        font-size: 0.9rem;
+    }
+
+    .advantagesSection2Item{
+        padding: 20px;
+    }
+
+    .advantagesSection2Item h4{
+        font-size: 1.1rem;
+    }
+
+    .whyChooseItem{
+        width: 95%;
+    }
+
+    .whyChoose h2{
+        font-size: 1.5rem;
+    }
+
+    .paulowniaTreeHeader{
+        margin-left: 20px;
+    }
+
+    .paulowniaTreeHeader a{
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,9 @@
+.languageSwitcherWrap{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.langBTN{
+    font-size: 2rem;
+}

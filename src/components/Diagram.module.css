@@ -1,0 +1,132 @@
+/* Diagram.module.css */
+
+.diagramContainer {
+    background-color: #4b5563; /* bg-gray-600 */
+    display: flex; /* flex */
+    row-gap: 2.5rem; /* gap-y-10 */
+    flex-direction: column; /* flex-col */
+    color: #ffffff; /* text-white */
+    padding: 2.5rem; /* p-10 */
+    position: relative; /* relative */
+}
+
+@media (min-width: 1024px) { /* lg:flex-row */
+    .diagramContainer {
+        flex-direction: row;
+    }
+}
+
+
+
+.title {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 700; /* font-bold */
+    margin-bottom: 1.5rem; /* mb-6 */
+}
+
+.legendItems {
+    display: flex; /* flex */
+    flex-direction: column; /* flex-col */
+    row-gap: 1rem; /* space-y-4 */
+}
+
+.legendItem {
+    display: flex; /* flex */
+    align-items: center; /* items-center */
+}
+
+.legendSwatch {
+    width: 1rem; /* w-4 */
+    height: 1rem; /* h-4 */
+    margin-right: 0.75rem; /* mr-3 */
+}
+
+.incomeSwatch {
+    background-color: #10B981; /* bg-[#10B981] */
+}
+
+.treesSwatch {
+    background-color: #108081; /* bg-[#108081] */
+}
+
+.co2Swatch {
+    background-color: #109381; /* bg-[#109381] */
+}
+
+.legendText {
+    font-size: 1.125rem; /* text-lg */
+    color: #ffffff; /* text-[#fff] */
+}
+
+.chartContainer {
+    /* width="90%" and height={400} are props for ResponsiveContainer, not direct CSS */
+    margin-top: 0; /* Default for mobile/small screens */
+}
+
+@media (min-width: 640px) { /* sm:mt-[150px] */
+    .chartContainer {
+        margin-top: 9.375rem; /* 150px converted to rem */
+    }
+}
+
+/* Recharts Tooltip contentStyle is inline, but you could define classes for it if needed */
+/* For example, if you wanted to override Recharts default tooltip with a custom component */
+
+@media (max-width: 1000px) {
+    .diagramContainer {
+        padding: 2rem;
+        row-gap: 2rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .legendText {
+        font-size: 1rem;
+    }
+
+    .chartContainer {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .diagramContainer {
+        padding: 1.5rem;
+        row-gap: 1.5rem;
+    }
+
+    .title {
+        font-size: 1.25rem;
+    }
+
+    .legendText {
+        font-size: 0.9rem;
+    }
+
+    .legendSwatch {
+        width: 0.875rem;
+        height: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .diagramContainer {
+        padding: 1rem;
+        row-gap: 1rem;
+    }
+
+    .title {
+        font-size: 1.125rem;
+    }
+
+    .legendText {
+        font-size: 0.85rem;
+    }
+
+    .chartContainer {
+        margin-top: 1rem;
+    }
+}

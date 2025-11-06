@@ -1,0 +1,77 @@
+.card{
+    background: #111316;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 30px 18px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.card:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.14);
+}
+
+.cardWrapper img{
+    width: 100px;
+    height: 100px;
+}
+
+.cardWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+}
+
+.cardContent{
+    display: grid;
+    gap: 8px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.cardContent h2{
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #e8eef6;
+}
+
+.cardContent p{
+    margin: 0;
+    font-size:1.2rem;
+    line-height: 1.5;
+    color: #b9c2cc;
+}
+
+.cardPrice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.cardPrice img{
+    width: 30px;
+    height: 30px;
+}
+
+.gelImage{
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.35));
+}
+
+.cardPrice p{
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    color: #f2f6fb;
+}
+
