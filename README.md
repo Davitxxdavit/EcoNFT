@@ -1,16 +1,57 @@
-# React + Vite
+# GreWeCo — Tokenized Tree Plantation Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Marketing website for GreWeCo, a project that tokenizes Paulownia tree plantations and offers the tokenized trees to investors. The site explains the model, the team, the sustainability goals, and the investment packages, in English and Georgian.
 
-Currently, two official plugins are available:
+Live site: [grew.eco](http://www.grew.eco/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![GreWeCo hero section](docs/screenshots/hero.jpg)
 
-## React Compiler
+| Key indicators chart | Mobile |
+| --- | --- |
+| ![Bar chart of projected income, trees, and CO2 absorption](docs/screenshots/indicators.png) | <img src="docs/screenshots/mobile.jpg" alt="GreWeCo on a phone-sized screen" width="260"> |
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- English / Georgian language switcher (i18next)
+- Business timeline and a key-indicators bar chart (Recharts)
+- UN Sustainable Development Goals the project addresses
+- "How does it work" explainer and investment package cards
+- Team carousel (Swiper), media gallery, and custom video player
+- FAQ accordion
+- Investor Documents page with a downloadable pitch deck (`/investorDocs`)
+- Responsive layout with a mobile menu
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech stack
+
+- React 19
+- Vite 7
+- React Router 7 with hash links for in-page navigation
+- i18next and react-i18next
+- Recharts
+- Swiper
+- CSS Modules
+
+## Run locally
+
+Requires Node.js 20 or newer.
+
+```bash
+npm install
+npm run dev      # start the dev server at http://localhost:5173
+npm run build    # production build in dist/
+npm run preview  # serve the production build
+npm run lint
+```
+
+## Project structure
+
+```text
+src/
+├── App.jsx                 routes: / and /investorDocs
+├── Home.jsx
+├── assets/                 images, video, and the pitch-deck PDF
+└── components/
+    ├── translation/        English and Georgian text
+    ├── i18n.jsx            i18next setup
+    └── *.jsx + *.module.css   page sections (Header, Timeline, Diagram, Goals, Faq, ...)
+```
